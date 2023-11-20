@@ -58,11 +58,11 @@ overlay.addEventListener("click", testimonialsModalFunc);
 
 // custom select variables
 const select = document.querySelector("[data-select]");
-select.setCharacterEncoding("UTF-8");
+//select.setCharacterEncoding("UTF-8");
 const selectItems = document.querySelectorAll("[data-select-item]");
-selectItems.setCharacterEncoding("UTF-8");
+//selectItems.setCharacterEncoding("UTF-8");
 const selectValue = document.querySelector("[data-selecct-value]");
-selectValue.setCharacterEncoding("UTF-8");
+//selectValue.setCharacterEncoding("UTF-8");
 const filterBtn = document.querySelectorAll("[data-filter-btn]");
 filterBtn.setCharacterEncoding("UTF-8");
 
