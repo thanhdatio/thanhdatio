@@ -18,6 +18,7 @@ sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); }
 
 // testimonials variables
 const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
+
 const modalContainer = document.querySelector("[data-modal-container]");
 const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
 const overlay = document.querySelector("[data-overlay]");
@@ -57,9 +58,13 @@ overlay.addEventListener("click", testimonialsModalFunc);
 
 // custom select variables
 const select = document.querySelector("[data-select]");
+select.setCharacterEncoding("UTF-8");
 const selectItems = document.querySelectorAll("[data-select-item]");
+selectItems.setCharacterEncoding("UTF-8");
 const selectValue = document.querySelector("[data-selecct-value]");
+selectValue.setCharacterEncoding("UTF-8");
 const filterBtn = document.querySelectorAll("[data-filter-btn]");
+filterBtn.setCharacterEncoding("UTF-8");
 
 select.addEventListener("click", function () { elementToggleFunc(this); });
 
