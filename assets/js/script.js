@@ -143,7 +143,7 @@ for (let i = 0; i < formInputs.length; i++) {
 
 // page navigation variables
 const navigationLinks_about = document.querySelector(".data-nav-link-about");
-const navigationLinks_resume = document.querySelector('.data-nav-link-resume');
+/*const navigationLinks_resume = document.querySelector('.data-nav-link-resume');
 const navigationLinks_portfolio = document.querySelector('.data-nav-link-portfolio');
 const navigationLinks_blog = document.querySelector('.data-nav-link-blog');
 const navigationLinks_contact = document.querySelector('.data-nav-link-contact');
@@ -151,7 +151,7 @@ const pages_about = document.querySelector('.about');
 const pages_resume = document.querySelector('.resume');
 const pages_portfolio = document.querySelector('.portfolio');
 const pages_blog = document.querySelector('.blog');
-const pages_contact = document.querySelector('.contact');
+const pages_contact = document.querySelector('.contact');*/
 navigationLinks_about.addEventListener("click", function () {
         /*pages_about.classList.add("active");
         navigationLinks_about.classList.add("active");
