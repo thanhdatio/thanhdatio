@@ -142,8 +142,12 @@ for (let i = 0; i < formInputs.length; i++) {
 
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
-const pages = document.querySelectorAll("[data-page]");
-
+const pages_about = document.getElementById("about");
+const pages_resume = document.qgetElementById("resume");
+const pages_portfolio = document.getElementById("portfolio");
+const pages_blog = document.getElementById("blog");
+const pages_contact = document.getElementById("contact");
+const pages=[pages_about,pages_resume,pages_portfolio,pages_blog,pages_contact];
 // add event to all nav link
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
