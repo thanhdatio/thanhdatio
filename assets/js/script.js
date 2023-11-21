@@ -162,7 +162,7 @@ navigationLinks_about.addEventListener("click", function () {
       }*/
     //}
   console.log('ok men');
-navigationLinks_about.classList.add("active");
+/*navigationLinks_about.classList.add("active");
 navigationLinks_resume.classList.remove("active");
 navigationLinks_portfolio.classList.remove("active");
 navigationLinks_blog.classList.remove("active");
@@ -172,9 +172,9 @@ pages_resume.classList.remove("active");
 pages_portfolio.classList.remove("active");
 pages_blog.classList.remove("active");
 pages_contact.classList.remove("active");
-window.scrollTo(0, 0);
+window.scrollTo(0, 0);*/
   });
-
+/*
  navigationLinks_resume.addEventListener("click", function () {
 
 navigationLinks_about.classList.remove("active");
@@ -236,5 +236,5 @@ pages_blog.classList.remove("active");
 pages_contact.classList.add("active");
 window.scrollTo(0, 0);
      
-  });
+  }); */
 }
