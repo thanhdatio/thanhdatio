@@ -140,92 +140,24 @@ for (let i = 0; i < formInputs.length; i++) {
 }
 
 
-
 // page navigation variables
-const navigationLinks_about = document.getElementById("data-nav-link-about");
-const navigationLinks_resume = document.getElementById("data-nav-link-resume");
-const navigationLinks_portfolio = document.getElementById("data-nav-link-portfolio");
-const navigationLinks_blog = document.getElementById("data-nav-link-blog");
-const navigationLinks_contact = document.getElementById("data-nav-link-contact");
-const pages_about = document.getElementById("page-about");
-const pages_resume = document.qgetElementById("page-resume");
-const pages_portfolio = document.getElementById("page-portfolio");
-const pages_blog = document.getElementById("page-blog");
-const pages_contact = document.getElementById("page-contact");
-navigationLinks_about.addEventListener("click", function () {
+const navigationLinks = document.querySelectorAll("[data-nav-link]");
+const pages = document.querySelectorAll("[data-page]");
 
-navigationLinks_about.classList.add("active");
-navigationLinks_resume.classList.remove("active");
-navigationLinks_portfolio.classList.remove("active");
-navigationLinks_blog.classList.remove("active");
-navigationLinks_contact.classList.remove("active");
-pages_about.classList.add("active");
-pages_resume.classList.remove("active");
-pages_portfolio.classList.remove("active");
-pages_blog.classList.remove("active");
-pages_contact.classList.remove("active");
-window.scrollTo(0, 0);
+// add event to all nav link
+for (let i = 0; i < navigationLinks.length; i++) {
+  navigationLinks[i].addEventListener("click", function () {
+
+    for (let i = 0; i < pages.length; i++) {
+      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
+        pages[i].classList.add("active");
+        navigationLinks[i].classList.add("active");
+        window.scrollTo(0, 0);
+      } else {
+        pages[i].classList.remove("active");
+        navigationLinks[i].classList.remove("active");
+      }
+    }
+
   });
-
- navigationLinks_resume.addEventListener("click", function () {
-
-navigationLinks_about.classList.remove("active");
-navigationLinks_resume.classList.add("active");
-navigationLinks_portfolio.classList.remove("active");
-navigationLinks_blog.classList.remove("active");
-navigationLinks_contact.classList.remove("active");
-pages_about.classList.remove("active");
-pages_resume.classList.add("active");
-pages_portfolio.classList.remove("active");
-pages_blog.classList.remove("active");
-pages_contact.classList.remove("active");
-window.scrollTo(0, 0);
-        });
-
-navigationLinks_portfolio.addEventListener("click", function () {
-
-navigationLinks_about.classList.remove("active");
-navigationLinks_resume.classList.remove("active");
-navigationLinks_portfolio.classList.add("active");
-navigationLinks_blog.classList.remove("active");
-navigationLinks_contact.classList.remove("active");
-pages_about.classList.remove("active");
-pages_resume.classList.remove("active");
-pages_portfolio.classList.add("active");
-pages_blog.classList.remove("active");
-pages_contact.classList.remove("active");
-window.scrollTo(0, 0);
-      
-  });
-
-navigationLinks_blog.addEventListener("click", function () {
-
-navigationLinks_about.classList.remove("active");
-navigationLinks_resume.classList.remove("active");
-navigationLinks_portfolio.classList.remove("active");
-navigationLinks_blog.classList.add("active");
-navigationLinks_contact.classList.remove("active");
-pages_about.classList.remove("active");
-pages_resume.classList.remove("active");
-pages_portfolio.classList.remove("active");
-pages_blog.classList.add("active");
-pages_contact.classList.remove("active");
-window.scrollTo(0, 0);
-      
-  });
-
-navigationLinks_contact.addEventListener("click", function () {
-
-navigationLinks_about.classList.remove("active");
-navigationLinks_resume.classList.remove("active");
-navigationLinks_portfolio.classList.remove("active");
-navigationLinks_blog.classList.remove("active");
-navigationLinks_contact.classList.add("active");
-pages_about.classList.remove("active");
-pages_resume.classList.remove("active");
-pages_portfolio.classList.remove("active");
-pages_blog.classList.remove("active");
-pages_contact.classList.add("active");
-window.scrollTo(0, 0);
-     
-  }); 
+}
