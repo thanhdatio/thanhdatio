@@ -142,24 +142,59 @@ for (let i = 0; i < formInputs.length; i++) {
 
 
 // page navigation variables
-const navigationLinks = document.querySelectorAll("[data-nav-link]");
-const pages = document.querySelectorAll("[data-page]");
-//const pages="";
-//const checkpages=["giới thiệu","lịch trình","mục tiêu","blog","liên hệ"];
-// add event to all nav link
-for (let i = 0; i < navigationLinks.length; i++) {
-  navigationLinks[i].addEventListener("click", function () {
-//checkpages[i].dataset.page)
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
+const navigationLinks_about = document.querySelector("[data-nav-link-about]");
+const navigationLinks_resume = document.querySelector("[data-nav-link-resume]");
+const navigationLinks_portfolio = document.querySelector("[data-nav-link-portfolio]");
+const navigationLinks_blog = document.querySelector("[data-nav-link-blog]");
+const navigationLinks_contact = document.querySelector("[data-nav-link-contact]");
+const pages_about = document.querySelector("[data-page-about]");
+const pages_resume = document.querySelector("[data-page-resume]");
+const pages_portfolio = document.querySelector("[data-page-portfolio]");
+const pages_blog = document.querySelector("[data-page-blog]");
+const pages_contact = document.querySelector("[data-page-contact]");
+navigationLinks_about.addEventListener("click", function () {
+        pages_about.classList.add("active");
+        navigationLinks_about.classList.add("active");
         window.scrollTo(0, 0);
-      } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
-      }
-    }
+      /*} else {
+        pages_about.classList.remove("active");
+        navigationLinks_about.classList.remove("active");
+      }*/
+    //}
 
+  });
+
+ navigationLinks_resume.addEventListener("click", function () {
+
+        pages_resume.classList.add("active");
+        navigationLinks_resume.classList.add("active");
+        window.scrollTo(0, 0);
+        });
+
+navigationLinks_portfolio.addEventListener("click", function () {
+
+     
+        pages_portfolio.classList.add("active");
+        navigationLinks_portfolio.classList.add("active");
+        window.scrollTo(0, 0);
+      
+  });
+
+navigationLinks_blog.addEventListener("click", function () {
+
+     
+        pages_blog.classList.add("active");
+        navigationLinks_blog.classList.add("active");
+        window.scrollTo(0, 0);
+      
+  });
+
+navigationLinks_contact.addEventListener("click", function () {
+
+      
+        pages_contact.classList.add("active");
+        navigationLinks_contact.classList.add("active");
+        window.scrollTo(0, 0);
+     
   });
 }
