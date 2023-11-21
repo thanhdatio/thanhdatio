@@ -237,4 +237,3 @@ pages_contact.classList.add("active");
 window.scrollTo(0, 0);
      
   }); */
-}
