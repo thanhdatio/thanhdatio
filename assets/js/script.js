@@ -149,9 +149,9 @@ const checkpages=["giới thiệu","lịch trình","mục tiêu","blog","liên h
 // add event to all nav link
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
-
+//checkpages[i].dataset.page)
     for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === checkpages[i].dataset.page) {
+      if (this.innerHTML.toLowerCase() === checkpages[i]) {
         pages[i].classList.add("active");
         navigationLinks[i].classList.add("active");
         window.scrollTo(0, 0);
