@@ -71,9 +71,9 @@ select.addEventListener("click", function () { elementToggleFunc(this); });
 // add event in all select items
 for (let i = 0; i < selectItems.length; i++) {
   selectItems[i].addEventListener("click", function () {
-
-    let selectedValue = this.innerText.toLowerCase();
-    selectValue.innerText = this.innerText;
+//innerText = textContent
+    let selectedValue = this.textContent.toLowerCase();
+    selectValue.textContent = this.textContent;
     elementToggleFunc(select);
     filterFunc(selectedValue);
 
@@ -105,9 +105,9 @@ let lastClickedBtn = filterBtn[0];
 for (let i = 0; i < filterBtn.length; i++) {
 
   filterBtn[i].addEventListener("click", function () {
-
-    let selectedValue = this.innerText.toLowerCase();
-    selectValue.innerText = this.innerText;
+//innerText = textContent
+    let selectedValue = this.textContent.toLowerCase();
+    selectValue.textContent = this.textContent;
     filterFunc(selectedValue);
 
     lastClickedBtn.classList.remove("active");
