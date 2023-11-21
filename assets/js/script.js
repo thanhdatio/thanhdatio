@@ -161,7 +161,7 @@ navigationLinks_about.addEventListener("click", function () {
         navigationLinks_about.classList.remove("active");
       }*/
     //}
-  console.log('ok men');
+  document.querySelector("#data-nav-link-about").innerHTML = "ok";
 /*navigationLinks_about.classList.add("active");
 navigationLinks_resume.classList.remove("active");
 navigationLinks_portfolio.classList.remove("active");
