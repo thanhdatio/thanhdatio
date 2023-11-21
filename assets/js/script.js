@@ -162,76 +162,76 @@ navigationLinks_about.addEventListener("click", function () {
       }*/
     //}
 navigationLinks_about.classList.add("active");
-navigationLinks_resume.classList.remove("active");
-navigationLinks_portfolio.classList.remove("active");
-navigationLinks_blog.classList.remove("active");
-navigationLinks_contact.classList.remove("active");
+//navigationLinks_resume.classList.remove("active");
+//navigationLinks_portfolio.classList.remove("active");
+//navigationLinks_blog.classList.remove("active");
+//navigationLinks_contact.classList.remove("active");
 pages_about.classList.add("active");
-pages_resume.classList.remove("active");
-pages_portfolio.classList.remove("active");
-pages_blog.classList.remove("active");
-pages_contact.classList.remove("active");
+//pages_resume.classList.remove("active");
+//pages_portfolio.classList.remove("active");
+//pages_blog.classList.remove("active");
+//pages_contact.classList.remove("active");
 window.scrollTo(0, 0);
   });
 
  navigationLinks_resume.addEventListener("click", function () {
 
-navigationLinks_about.classList.remove("active");
+//navigationLinks_about.classList.remove("active");
 navigationLinks_resume.classList.add("active");
-navigationLinks_portfolio.classList.remove("active");
-navigationLinks_blog.classList.remove("active");
-navigationLinks_contact.classList.remove("active");
-pages_about.classList.remove("active");
+//navigationLinks_portfolio.classList.remove("active");
+//navigationLinks_blog.classList.remove("active");
+//navigationLinks_contact.classList.remove("active");
+//pages_about.classList.remove("active");
 pages_resume.classList.add("active");
-pages_portfolio.classList.remove("active");
-pages_blog.classList.remove("active");
-pages_contact.classList.remove("active");
+//pages_portfolio.classList.remove("active");
+//pages_blog.classList.remove("active");
+//pages_contact.classList.remove("active");
 window.scrollTo(0, 0);
         });
 
 navigationLinks_portfolio.addEventListener("click", function () {
 
-  navigationLinks_about.classList.remove("active");
-navigationLinks_resume.classList.remove("active");
+  //navigationLinks_about.classList.remove("active");
+//navigationLinks_resume.classList.remove("active");
 navigationLinks_portfolio.classList.add("active");
-navigationLinks_blog.classList.remove("active");
-navigationLinks_contact.classList.remove("active");
-pages_about.classList.remove("active");
-pages_resume.classList.remove("active");
+//navigationLinks_blog.classList.remove("active");
+//navigationLinks_contact.classList.remove("active");
+//pages_about.classList.remove("active");
+//pages_resume.classList.remove("active");
 pages_portfolio.classList.add("active");
-pages_blog.classList.remove("active");
-pages_contact.classList.remove("active");
+//pages_blog.classList.remove("active");
+//pages_contact.classList.remove("active");
 window.scrollTo(0, 0);
       
   });
 
 navigationLinks_blog.addEventListener("click", function () {
 
-  navigationLinks_about.classList.remove("active");
-navigationLinks_resume.classList.remove("active");
-navigationLinks_portfolio.classList.remove("active");
+  //navigationLinks_about.classList.remove("active");
+//navigationLinks_resume.classList.remove("active");
+//navigationLinks_portfolio.classList.remove("active");
 navigationLinks_blog.classList.add("active");
-navigationLinks_contact.classList.remove("active");
-pages_about.classList.remove("active");
-pages_resume.classList.remove("active");
-pages_portfolio.classList.remove("active");
+//navigationLinks_contact.classList.remove("active");
+//pages_about.classList.remove("active");
+//pages_resume.classList.remove("active");
+//pages_portfolio.classList.remove("active");
 pages_blog.classList.add("active");
-pages_contact.classList.remove("active");
+//pages_contact.classList.remove("active");
 window.scrollTo(0, 0);
       
   });
 
 navigationLinks_contact.addEventListener("click", function () {
 
-  navigationLinks_about.classList.remove("active");
-navigationLinks_resume.classList.remove("active");
-navigationLinks_portfolio.classList.remove("active");
-navigationLinks_blog.classList.remove("active");
+  //navigationLinks_about.classList.remove("active");
+//navigationLinks_resume.classList.remove("active");
+//navigationLinks_portfolio.classList.remove("active");
+//navigationLinks_blog.classList.remove("active");
 navigationLinks_contact.classList.add("active");
-pages_about.classList.remove("active");
-pages_resume.classList.remove("active");
-pages_portfolio.classList.remove("active");
-pages_blog.classList.remove("active");
+//pages_about.classList.remove("active");
+//pages_resume.classList.remove("active");
+//pages_portfolio.classList.remove("active");
+//pages_blog.classList.remove("active");
 pages_contact.classList.add("active");
 window.scrollTo(0, 0);
      
