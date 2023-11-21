@@ -145,11 +145,11 @@ for (let i = 0; i < formInputs.length; i++) {
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 //const pages = document.querySelectorAll("[data-page]");
 //const pages="";
-pages[0]="Giới thiệu";
-pages[1]="Lịch trình";
-pages[2]="Mục tiêu";
-pages[3]="Blog";
-pages[4]="Liên hệ";
+pages[0]="giới thiệu";
+pages[1]="lịch trình";
+pages[2]="mục tiêu";
+pages[3]="blog";
+pages[4]="liên hệ";
 // add event to all nav link
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
