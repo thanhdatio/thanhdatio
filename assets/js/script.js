@@ -145,13 +145,13 @@ for (let i = 0; i < formInputs.length; i++) {
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 //const pages="";
-const checkpages=["giới thiệu","lịch trình","mục tiêu","blog","liên hệ"];
+//const checkpages=["giới thiệu","lịch trình","mục tiêu","blog","liên hệ"];
 // add event to all nav link
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
 //checkpages[i].dataset.page)
     for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === checkpages[i]) {
+      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
         pages[i].classList.add("active");
         navigationLinks[i].classList.add("active");
         window.scrollTo(0, 0);
