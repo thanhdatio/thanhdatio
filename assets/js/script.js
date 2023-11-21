@@ -142,7 +142,7 @@ for (let i = 0; i < formInputs.length; i++) {
 
 
 // page navigation variables
-const navigationLinks_about = document.querySelector(".data-nav-link-about");
+const navigationLinks_about = document.querySelector("#data-nav-link-about");
 /*const navigationLinks_resume = document.querySelector('.data-nav-link-resume');
 const navigationLinks_portfolio = document.querySelector('.data-nav-link-portfolio');
 const navigationLinks_blog = document.querySelector('.data-nav-link-blog');
