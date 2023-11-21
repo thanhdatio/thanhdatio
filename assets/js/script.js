@@ -142,27 +142,19 @@ for (let i = 0; i < formInputs.length; i++) {
 
 
 // page navigation variables
-let navigationLinks_about = document.getElementById("data-nav-link-about");
-/*const navigationLinks_resume = document.querySelector('.data-nav-link-resume');
-const navigationLinks_portfolio = document.querySelector('.data-nav-link-portfolio');
-const navigationLinks_blog = document.querySelector('.data-nav-link-blog');
-const navigationLinks_contact = document.querySelector('.data-nav-link-contact');
-const pages_about = document.querySelector('.about');
-const pages_resume = document.querySelector('.resume');
-const pages_portfolio = document.querySelector('.portfolio');
-const pages_blog = document.querySelector('.blog');
-const pages_contact = document.querySelector('.contact');*/
+const navigationLinks_about = document.getElementById("data-nav-link-about");
+const navigationLinks_resume = document.getElementById("data-nav-link-resume");
+const navigationLinks_portfolio = document.getElementById("data-nav-link-portfolio");
+const navigationLinks_blog = document.getElementById("data-nav-link-blog");
+const navigationLinks_contact = document.getElementById("data-nav-link-contact");
+const pages_about = document.getElementById("page-about");
+const pages_resume = document.qgetElementById("page-resume");
+const pages_portfolio = document.getElementById("page-portfolio");
+const pages_blog = document.getElementById("page-blog");
+const pages_contact = document.getElementById("page-contact");
 navigationLinks_about.addEventListener("click", function () {
-        /*pages_about.classList.add("active");
-        navigationLinks_about.classList.add("active");
-        window.scrollTo(0, 0);
-      / else {
-        pages_about.classList.remove("active");
-        navigationLinks_about.classList.remove("active");
-      }*/
-    //}
-  alert("ngon");
-/*navigationLinks_about.classList.add("active");
+
+navigationLinks_about.classList.add("active");
 navigationLinks_resume.classList.remove("active");
 navigationLinks_portfolio.classList.remove("active");
 navigationLinks_blog.classList.remove("active");
@@ -172,9 +164,9 @@ pages_resume.classList.remove("active");
 pages_portfolio.classList.remove("active");
 pages_blog.classList.remove("active");
 pages_contact.classList.remove("active");
-window.scrollTo(0, 0);*/
+window.scrollTo(0, 0);
   });
-/*
+
  navigationLinks_resume.addEventListener("click", function () {
 
 navigationLinks_about.classList.remove("active");
@@ -236,4 +228,4 @@ pages_blog.classList.remove("active");
 pages_contact.classList.add("active");
 window.scrollTo(0, 0);
      
-  }); */
+  }); 
