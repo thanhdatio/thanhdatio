@@ -161,7 +161,7 @@ navigationLinks_about.addEventListener("click", function () {
         navigationLinks_about.classList.remove("active");
       }*/
     //}
-  document.querySelector("#data-nav-link-about").innerHTML = "ok";
+  alert("ngon");
 /*navigationLinks_about.classList.add("active");
 navigationLinks_resume.classList.remove("active");
 navigationLinks_portfolio.classList.remove("active");
