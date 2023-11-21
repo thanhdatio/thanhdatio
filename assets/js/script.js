@@ -144,7 +144,7 @@ for (let i = 0; i < formInputs.length; i++) {
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 //const pages = document.querySelectorAll("[data-page]");
-const pages="";
+//const pages="";
 pages[0]="Giới thiệu";
 pages[1]="Lịch trình";
 pages[2]="Mục tiêu";
