@@ -148,24 +148,24 @@ const pages_resume = document.getElementById("resume");
 const pages_portfolio = document.getElementById("portfolio");
 const pages_blog = document.getElementById("blog");
 const pages_contact = document.getElementById("contact"); 
-alert("ok -1");
+//alert("ok -1");
 //let pages=[pages_about,pages_resume,pages_portfolio,pages_blog,pages_contact];
 // add event to all nav link
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
-    alert("ok 0");
+   // alert("ok 0");
 //pages[i].dataset.page  .toLowerCase()
     for (let i = 0; i < pages.length; i++) {
-      alert(this.innerHTML);
-      alert(pages[i].dataset.page);
-      alert(pages[i].toString());
+      //alert(this.innerHTML);
+     // alert(pages[i].dataset.page);
+      //alert(pages[i].toString());
       if (this.innerHTML === pages[i].toString()) {
-         alert("ok 2, this.innerHTML");
+         //alert("ok 2, this.innerHTML");
         pages[i].classList.add("active");
         navigationLinks[i].classList.add("active");
         window.scrollTo(0, 0);
       } else {
-        alert("ok 3");
+        //alert("ok 3");
         pages[i].classList.remove("active");
         navigationLinks[i].classList.remove("active");
       }
