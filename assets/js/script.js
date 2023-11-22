@@ -141,7 +141,7 @@ for (let i = 0; i < formInputs.length; i++) {
 
 
 // page navigation variables
-const navigationLinks = document.querySelectorAll("[data-nav-link]");
+//const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages_about = document.getElementById("about");
 const pages_resume = document.qgetElementById("resume");
 const pages_portfolio = document.getElementById("portfolio");
