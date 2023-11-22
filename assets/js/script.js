@@ -159,7 +159,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
       alert(this.innerHTML);
       alert(pages[i].dataset.page);
       alert(pages[i].toString());
-      if (this.innerHTML === pages[i].dataset.page) {
+      if (this.innerHTML === pages[i].toString()) {
          alert("ok 2, this.innerHTML");
         pages[i].classList.add("active");
         navigationLinks[i].classList.add("active");
