@@ -160,9 +160,9 @@ for (let i = 0; i < navigationLinks.length; i++) {
      // alert(pages[i].dataset.page);
       //alert(pages[i].toString());
       if (this.innerHTML === pages[j].dataset.page) {
-         alert(pages[j].toString());
-        alert(pages[j].dataset.page);
-        alert(this.innerHTML);
+        // alert(pages[j].toString());
+        //alert(pages[j].dataset.page);
+        //alert(this.innerHTML);
         pages[j].classList.add("active");
         navigationLinks[i].classList.add("active");
         window.scrollTo(0, 0);
