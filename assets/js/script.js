@@ -108,7 +108,7 @@ for (let i = 0; i < filterBtn.length; i++) {
 
   filterBtn[i].addEventListener("click", function () {
 //innerText = textContent
-    let selectedValue = this.textContent.toLowerCase();
+    let selectedValue = this.textContent;
     selectValue.textContent = this.textContent;
     filterFunc(selectedValue);
 
