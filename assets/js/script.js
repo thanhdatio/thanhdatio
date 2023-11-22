@@ -72,7 +72,8 @@ select.addEventListener("click", function () { elementToggleFunc(this); });
 for (let i = 0; i < selectItems.length; i++) {
   selectItems[i].addEventListener("click", function () {
 //innerText = textContent
-    let selectedValue = this.textContent.toLowerCase();
+    //let selectedValue = this.textContent.toLowerCase();
+    let selectedValue = this.textContent;
     selectValue.textContent = this.textContent;
     elementToggleFunc(select);
     filterFunc(selectedValue);
