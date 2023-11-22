@@ -155,9 +155,10 @@ for (let i = 0; i < navigationLinks.length; i++) {
     alert("ok 0");
 //pages[i].dataset.page  .toLowerCase()
     for (let i = 0; i < pages.length; i++) {
-      alert("ok 1");
+      alert(this.innerHTML);
+      alert(pages[i]);
       if (this.innerHTML === pages[i]) {
-         alert("ok 2");
+         alert("ok 2, this.innerHTML");
         pages[i].classList.add("active");
         navigationLinks[i].classList.add("active");
         window.scrollTo(0, 0);
