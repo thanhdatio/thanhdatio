@@ -151,14 +151,17 @@ const pages=[pages_about,pages_resume,pages_portfolio,pages_blog,pages_contact];
 // add event to all nav link
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
+    alert("ok 0");
 //pages[i].dataset.page  .toLowerCase()
     for (let i = 0; i < pages.length; i++) {
+      alert("ok 1");
       if (this.innerHTML === pages[i]) {
-         alert("ok 1");
+         alert("ok 2");
         pages[i].classList.add("active");
         navigationLinks[i].classList.add("active");
         window.scrollTo(0, 0);
       } else {
+        alert("ok 3");
         pages[i].classList.remove("active");
         navigationLinks[i].classList.remove("active");
       }
