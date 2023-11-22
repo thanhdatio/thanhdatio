@@ -148,7 +148,7 @@ const pages_portfolio = document.getElementById("portfolio");
 const pages_blog = document.getElementById("blog");
 const pages_contact = document.getElementById("contact"); 
 alert("ok -1");
-const pages=[pages_about,pages_resume,pages_portfolio,pages_blog,pages_contact];
+let pages=[pages_about,pages_resume,pages_portfolio,pages_blog,pages_contact];
 // add event to all nav link
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
