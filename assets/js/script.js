@@ -168,6 +168,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
         window.scrollTo(0, 0);
       } else {
         alert(pages[i].toString());
+        alert(pages[i].dataset.page);
         alert(this.innerHTML);
         pages[i].classList.remove("active");
         navigationLinks[i].classList.remove("active");
