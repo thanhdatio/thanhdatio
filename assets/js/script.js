@@ -85,7 +85,7 @@ for (let i = 0; i < selectItems.length; i++) {
 const filterItems = document.querySelectorAll("[data-filter-item]");
 
 const filterFunc = function (selectedValue) {
-
+alert(selectedValue);
   for (let i = 0; i < filterItems.length; i++) {
 
     if (selectedValue === "Tất cả") {
