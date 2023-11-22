@@ -157,7 +157,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
 //pages[i].dataset.page  .toLowerCase()
     for (let i = 0; i < pages.length; i++) {
       alert(this.innerHTML);
-      alert(pages[i]);
+      alert(pages[i].dataset.page);
       if (this.innerHTML === pages[i].dataset.page) {
          alert("ok 2, this.innerHTML");
         pages[i].classList.add("active");
