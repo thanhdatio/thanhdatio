@@ -155,19 +155,19 @@ for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
    // alert("ok 0");
 //pages[i].dataset.page  .toLowerCase()
-    for (let j = 0; j < pages.length; j++) {
+    for (let i = 0; i < pages.length; i++) {
       //alert(this.innerHTML);
      // alert(pages[i].dataset.page);
       //alert(pages[i].toString());
-      if (this.innerHTML === pages[j].dataset.page) {
-        // alert(pages[j].toString());
-        //alert(pages[j].dataset.page);
+      if (this.innerHTML === pages[i].dataset.page) {
+        // alert(pages[i].toString());
+        //alert(pages[i].dataset.page);
         //alert(this.innerHTML);
-        pages[j].classList.add("active");
+        pages[i].classList.add("active");
         navigationLinks[i].classList.add("active");
         window.scrollTo(0, 0);
       } else {
-        pages[j].classList.remove("active");
+        pages[i].classList.remove("active");
         navigationLinks[i].classList.remove("active");
       }
     }
