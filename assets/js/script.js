@@ -159,7 +159,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
       //alert(this.innerHTML);
      // alert(pages[i].dataset.page);
       //alert(pages[i].toString());
-      if (this.innerHTML === pages[i].toString()) {
+      if (this.innerHTML === pages[i].dataset.page) {
          alert(pages[i].toString());
         alert(pages[i].dataset.page);
         alert(this.innerHTML);
@@ -167,9 +167,6 @@ for (let i = 0; i < navigationLinks.length; i++) {
         navigationLinks[i].classList.add("active");
         window.scrollTo(0, 0);
       } else {
-        alert(pages[i].toString());
-        alert(pages[i].dataset.page);
-        alert(this.innerHTML);
         pages[i].classList.remove("active");
         navigationLinks[i].classList.remove("active");
       }
