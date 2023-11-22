@@ -151,9 +151,9 @@ const pages=[pages_about,pages_resume,pages_portfolio,pages_blog,pages_contact];
 // add event to all nav link
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
-//pages[i].dataset.page
+//pages[i].dataset.page  .toLowerCase()
     for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i]) {
+      if (this.innerHTML === pages[i]) {
         pages[i].classList.add("active");
         navigationLinks[i].classList.add("active");
         window.scrollTo(0, 0);
