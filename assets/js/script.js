@@ -54,24 +54,14 @@ for (let i = 0; i < testimonialsItem.length; i++) {
 modalCloseBtn.addEventListener("click", testimonialsModalFunc);
 overlay.addEventListener("click", testimonialsModalFunc);
 
-
-
 // custom select variables
 const select = document.querySelector("[data-select]");
-//select.setCharacterEncoding("UTF-8");
 const selectItems = document.querySelectorAll("[data-select-item]");
-//selectItems.setCharacterEncoding("UTF-8");
 const selectValue = document.querySelector("[data-selecct-value]");
-//selectValue.setCharacterEncoding("UTF-8");
 const filterBtn = document.querySelectorAll("[data-filter-btn]");
-//filterBtn.setCharacterEncoding("UTF-8");
-
 select.addEventListener("click", function () { elementToggleFunc(this); });
-
-// add event in all select items
 for (let i = 0; i < selectItems.length; i++) {
   selectItems[i].addEventListener("click", function () {
-//innerText = textContent
     //let selectedValue = this.textContent.toLowerCase();
     let selectedValue = this.textContent;
     selectValue.textContent = this.textContent;
@@ -83,9 +73,7 @@ for (let i = 0; i < selectItems.length; i++) {
 
 // filter variables
 const filterItems = document.querySelectorAll("[data-filter-item]");
-
 const filterFunc = function (selectedValue) {
-//alert(selectedValue);
   for (let i = 0; i < filterItems.length; i++) {
 
     if (selectedValue === "Tất cả") {
@@ -96,9 +84,7 @@ const filterFunc = function (selectedValue) {
     } else {
       filterItems[i].classList.remove("active");
     }
-
   }
-
 }
 
 // add event in all filter button items for large screen
@@ -107,20 +93,14 @@ let lastClickedBtn = filterBtn[0];
 for (let i = 0; i < filterBtn.length; i++) {
 
   filterBtn[i].addEventListener("click", function () {
-//innerText = textContent
     let selectedValue = this.textContent;
     selectValue.textContent = this.textContent;
     filterFunc(selectedValue);
-
     lastClickedBtn.classList.remove("active");
     this.classList.add("active");
     lastClickedBtn = this;
-
   });
-
 }
-
-
 
 // contact form variables
 const form = document.querySelector("[data-form]");
@@ -130,41 +110,23 @@ const formBtn = document.querySelector("[data-form-btn]");
 // add event to all form input field
 for (let i = 0; i < formInputs.length; i++) {
   formInputs[i].addEventListener("input", function () {
-
     // check form validation
     if (form.checkValidity()) {
       formBtn.removeAttribute("disabled");
     } else {
       formBtn.setAttribute("disabled", "");
     }
-
   });
 }
-
 
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
-const pages_about = document.getElementById("about");
-const pages_resume = document.getElementById("resume");
-const pages_portfolio = document.getElementById("portfolio");
-const pages_blog = document.getElementById("blog");
-const pages_contact = document.getElementById("contact"); 
-//alert("ok -1");
-//let pages=[pages_about,pages_resume,pages_portfolio,pages_blog,pages_contact];
 // add event to all nav link
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
-   // alert("ok 0");
-//pages[i].dataset.page  .toLowerCase()
     for (let i = 0; i < pages.length; i++) {
-      //alert(this.innerHTML);
-     // alert(pages[i].dataset.page);
-      //alert(pages[i].toString());
       if (this.innerHTML === pages[i].dataset.page) {
-        // alert(pages[i].toString());
-        //alert(pages[i].dataset.page);
-        //alert(this.innerHTML);
         pages[i].classList.add("active");
         navigationLinks[i].classList.add("active");
         window.scrollTo(0, 0);
@@ -173,6 +135,5 @@ for (let i = 0; i < navigationLinks.length; i++) {
         navigationLinks[i].classList.remove("active");
       }
     }
-
   });
 }
